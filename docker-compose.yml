@@ -1,0 +1,11 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+#    restart: always
+    environment:
+      - 'MYSQL_DATABASE=explorecali'
+      - 'MYSQL_USER=tour'
+      - 'MYSQL_PASSWORD=tour'
+      - 'MYSQL_ROOT_PASSWORD=root'
+    ports:
+      - "5555:5555"
